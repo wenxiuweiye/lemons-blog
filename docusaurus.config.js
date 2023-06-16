@@ -6,10 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Lemons Blog',
+  tagline: 'personal blog and Lemon component documentation ',
   favicon: 'img/favicon.ico',
-  
+
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'wenxiuweiye', // Usually your GitHub org/user name.
+  projectName: 'lemons-blog', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ch',
+    locales: ['ch'],
   },
 
   presets: [
@@ -58,33 +58,50 @@ const config = {
     ],
   ],
 
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+      docs:{
+        sidebar:{
+          hideable:true
+        }
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Lemons Blog',
         logo: {
           alt: 'Lemons Blog Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo/logo.svg',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            docId: 'musicTheory/musicTheory-intro',
+            type: 'doc',
             position: 'left',
-            label: 'Doc',
+            label: 'musicTheory',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            docId: "languages/languages-intro",
+            type: "doc",
+            position: "left",
+            label: "Language"
+          },
+          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            href: 'https://github.com/wenxiuweiye/lemons-blog',
             label: 'GitHub',
             position: 'right',
           },
+
         ],
       },
       footer: {
+        logo: {
+          src: "img/logo/logo.svg"
+        },
         style: 'dark',
         links: [
           {
@@ -127,7 +144,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Lemons Blog, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
