@@ -20,7 +20,6 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'wenxiuweiye', // Usually your GitHub org/user name.
   projectName: 'lemons-blog', // Usually your repo name.
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -88,6 +87,24 @@ const config = {
             type: "doc",
             position: "left",
             label: "Language"
+          },
+          {
+            docId:"design/design-intro",
+            type:"doc",
+            position:"left",
+            label:"design"
+          },
+          {
+            docId:"web/intro",
+            type:"doc",
+            position:"left",
+            label:"web"
+          },
+          {
+            docId:"algorithm/algorithm-intro",
+            type:"doc",
+            position:"left",
+            label:"algorithm"
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {

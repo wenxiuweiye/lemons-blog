@@ -1,0 +1,12 @@
+name: dev
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: 
+  push:
+    branches:
+      - dev
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "pushing dev is finish !!" 
