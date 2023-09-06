@@ -1,6 +1,6 @@
 {
-  "name": "my-website",
-  "version": "0.0.0",
+  "name": "lemons-blog",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -46,5 +46,9 @@
   },
   "engines": {
     "node": ">=16.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wenxiuweiye/lemons-blog.git"
   }
 }
