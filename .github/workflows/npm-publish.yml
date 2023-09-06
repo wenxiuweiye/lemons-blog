@@ -31,4 +31,4 @@ jobs:
           npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
           npm publish
         env:
-          NPM_AUTH_TOKEN: ${{secrets.npm_token}}
+          NPM_AUTH_TOKEN: ${{env.NPM_AUTH_TOKEN}}
